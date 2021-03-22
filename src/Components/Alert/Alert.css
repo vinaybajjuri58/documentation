@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+:root {
+  font-size: 16px;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --font-size: 1.1rem;
+  --primary-color: #9575cd;
+  --primary: #0984e3;
+  --success: #2ecc71;
+  --warning: #e74c3c;
+  --font-color: #fffff3;
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  padding: var(--space-1) var(--space-2);
+}
+.alert {
+  border: 1px solid black;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  font-size: var(--font-size);
+  margin: 0.5rem;
+}
+.alert > p {
+  padding-left: 1rem;
+}
+.alert-primary {
+  background-color: var(--primary);
+}
+.alert-success {
+  background-color: var(--success);
+}
+.alert-warning {
+  background-color: var(--warning);
+}
+.component {
+  width: 80%;
+  margin: auto;
+}

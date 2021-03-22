@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+:root {
+  font-size: 16px;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --font-size: 1.1rem;
+  --primary-color: #9575cd;
+  --grey-variant:#344c3a;
+  --primary: #0984e3;
+  --success: #2ecc71;
+  --warning: #e74c3c;
+  --font-color: #fffff3;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.badge {
+  background-color: var(--grey-variant);
+  color: var(--font-color);
+  padding: 0.25rem;
+  border-radius: 0.15rem;
+}
+.badge-primary {
+  background-color: var(--primary-color);
+  color: var(--font-color);
+}
+.badge-warning {
+  background-color: var(--warning);
+  color: var(--font-color);
+}
