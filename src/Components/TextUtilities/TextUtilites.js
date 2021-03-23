@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
-import "./TextUtilities.css";
+// import "./TextUtilities.css";
 
 export const TextUtilities = () => {
   useEffect(() => {

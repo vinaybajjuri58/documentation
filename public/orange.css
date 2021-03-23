@@ -174,12 +174,12 @@
 }
 .card-title {
   padding-left: 1rem;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   margin: 0.5rem;
 }
 .card-text {
   margin: 0.5rem;
-  padding: 0.5rem;
+  padding-left: 1rem;
 }
 
 .card-shopping {
@@ -195,14 +195,14 @@
   box-shadow: 0 2px 2px 2px #ccc;
 }
 .card-brand {
-  padding-left: 0.5rem;
-  padding-top: 0.3rem;
-  margin: 0;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  margin: 0.5rem;
 }
 .card-desc {
   font-size: 0.9rem;
-  padding: 0.5rem 0.3rem;
-  margin: 0;
+  margin: 0.5rem;
+  padding-left: 1rem;
 }
 
 /* CSS of avator */
