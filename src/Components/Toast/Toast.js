@@ -16,8 +16,8 @@ export const Toast = () => {
           display: displayToast,
         }}
       >
-        <p>Toast Message</p>
         <span>
+          <p>Toast Message</p>
           <button
             onClick={() => setDisplayToast("none")}
             className="button button-warning"
