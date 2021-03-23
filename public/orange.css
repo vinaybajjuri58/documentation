@@ -71,7 +71,7 @@
 
 .alert {
   border: 1px solid black;
-  width: 100%;
+  width: 90%;
   border-radius: 0.5rem;
   background-color: var(--primary-color);
   color: var(--font-color);

@@ -67,7 +67,7 @@
   overflow-y: auto;
   overflow-x: auto;
   margin-top: 12vh;
-  height: 90vh;
+  height: 88vh;
   justify-items: flex-start;
   grid-area: sidebar;
 }
@@ -96,6 +96,11 @@
 
 .component-description {
   margin-top: 12vh;
+  overflow: hidden;
+  position: sticky;
+  overflow-y: auto;
+  overflow-x: none;
+  height: 88vh;
   grid-area: description;
   padding: 0.7rem;
   display: flex;
