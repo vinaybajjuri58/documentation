@@ -262,7 +262,14 @@
   height: 1.25rem;
   width: 15rem;
   border: 0.75px solid black;
-  border-radius: 0.5rem;
+  border-radius: 0.125rem;
+  height: 2rem;
+}
+.teaxtarea-styled {
+  height: 10rem;
+  width: 30rem;
+  border: 1px solid black;
+  border-radius: 0.125rem;
 }
 
 /* CSS of modal */
