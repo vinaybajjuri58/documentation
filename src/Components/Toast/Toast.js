@@ -18,7 +18,7 @@ export const Toast = () => {
           display: displayToast,
         }}
       >
-        <span>
+        <div className="toast-container">
           <p>Toast Message</p>
           <button
             onClick={() => setDisplayToast("none")}
@@ -26,12 +26,12 @@ export const Toast = () => {
           >
             X
           </button>
-        </span>
+        </div>
       </div>
       <SyntaxHighlighter language="javascript" style={a11yDark}>
         {`Code Snippet
 <div class="toast">
-<span>
+<div class="toast-container" >
   <p>Toast Message</p>
   <button
     onClick={() => setDisplayToast("none")}
@@ -39,7 +39,7 @@ export const Toast = () => {
   >
     X
   </button>
-</span>
+</div>
 </div>`}
       </SyntaxHighlighter>
     </div>

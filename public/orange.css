@@ -78,6 +78,9 @@
   font-size: var(--font-size);
   margin: 0.5rem;
 }
+.alert p {
+  padding-left: 1rem;
+}
 .alert-text {
   padding-left: 1rem;
 }
@@ -337,9 +340,14 @@
   color: var(--font-color);
   font-size: medium;
   width: 300px;
-  height: 15%;
+  height: 10%;
   background-color: var(--grey-variant);
   border-radius: 0.5rem;
+}
+.toast-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* CSS of responsive navbar */
