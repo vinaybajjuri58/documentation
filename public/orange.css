@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 :root {
   font-size: 16px;
+  --space-0: 0.25rem;
   --space-1: 0.5rem;
   --space-2: 1rem;
   --space-3: 1.5rem;
@@ -13,8 +14,6 @@
   --warning: #e74c3c;
   --font-color: #fffff3;
   font-family: "Open Sans", sans-serif;
-  padding: 0;
-  margin: 0;
   --background-color: #9575cd;
 }
 /* CSS of navigation bar */
@@ -117,10 +116,9 @@
 .button {
   background-color: var(--grey-variant);
   color: var(--font-color);
-  padding: var(--space-1) var(--space-2);
-  border-radius: 0.5rem;
+  padding: var(--space-0) var(--space-1);
   font-size: var(--font-size);
-  outline: none;
+  border-radius: 0.2rem;
 }
 .button-primary {
   background-color: var(--primary-color);
@@ -137,8 +135,8 @@
   background-color: white;
   color: var(--grey-variant);
   border: 1.5px solid var(--grey-variant);
-  padding: var(--space-1) var(--space-2);
-  border-radius: 0.5rem;
+  padding: var(--space-0) var(--space-1);
+  border-radius: 0.2rem;
   font-size: var(--font-size);
 }
 .button-border:hover {
@@ -186,6 +184,7 @@
 }
 
 .card-shopping {
+  position: relative;
   width: 230px;
   display: flex;
   flex-direction: column;
@@ -193,10 +192,9 @@
   justify-content: flex-start;
   margin: 0;
   box-shadow: none;
-}
-.card-shopping:hover {
   box-shadow: 0 2px 2px 2px #ccc;
 }
+
 .card-brand {
   padding-left: 1rem;
   padding-top: 0.5rem;
@@ -206,6 +204,13 @@
   font-size: 0.9rem;
   margin: 0.5rem;
   padding-left: 1rem;
+}
+.remove-button {
+  display: block;
+  position: absolute;
+  right: 0.25rem;
+  top: 0.25rem;
+  border-radius: 50%;
 }
 
 /* CSS of avator */
