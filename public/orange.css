@@ -272,12 +272,15 @@
   border: 0.75px solid black;
   border-radius: 0.125rem;
   height: 2rem;
+  padding: var(--space-1);
 }
 .teaxtarea-styled {
+  padding: var(--space-1);
   height: 10rem;
   width: 30rem;
   border: 1px solid black;
   border-radius: 0.125rem;
+  font-size: 1rem;
 }
 
 /* CSS of modal */

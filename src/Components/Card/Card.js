@@ -27,18 +27,14 @@ export const Card = () => {
         <SyntaxHighlighter language="javascript" style={a11yDark}>
           {`Code Snippet
 <div class="card">
-<img
-  src="image-url"
-  alt=""
-  class="card-img"
-/>
-<h4 class="card-title">Card Title</h4>
-<p class="card-text">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et
-  architecto dicta. Placeat, aspernatur, commodi impedit dicta id,
-  explicabo porro cumque ullam dolore saepe fuga? Ullam porro voluptatum
-  suscipit dolor!
-</p>
+  <img src="image-url" alt="" class="card-img"/>
+  <h4 class="card-title">Card Title</h4>
+  <p class="card-text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et
+    architecto dicta. Placeat, aspernatur, commodi impedit dicta id,
+    explicabo porro cumque ullam dolore saepe fuga? Ullam porro voluptatum
+    suscipit dolor!
+  </p>
 </div>`}
         </SyntaxHighlighter>
       </div>
@@ -57,14 +53,10 @@ export const Card = () => {
         <SyntaxHighlighter language="javascript" style={a11yDark}>
           {`Code Snippet
 <div class="card card-shopping">
-<img
-  src="image-url"
-  alt=""
-  class="card-img"
-/>
-<h4 class="card-brand">Brand Name</h4>
-<p class="card-desc">A Black T-Shirt</p>
-<button class="remove-button button button-border">X</button>
+  <img src="image-url" alt="" class="card-img" />
+  <h4 class="card-brand">Brand Name</h4>
+  <p class="card-desc">A Black T-Shirt</p>
+  <button class="remove-button button button-border">X</button>
 </div> `}
         </SyntaxHighlighter>
       </div>

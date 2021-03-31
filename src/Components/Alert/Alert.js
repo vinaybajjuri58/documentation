@@ -28,7 +28,7 @@ export const Alert = () => {
         <SyntaxHighlighter language="javascript" style={a11yDark}>
           {`Code Snippet
 <div class="alert alert-primary" role="alert">
-<p>A primary alert</p>
+  <p>A primary alert</p>
 </div>`}
         </SyntaxHighlighter>
       </div>
@@ -40,7 +40,7 @@ export const Alert = () => {
         <SyntaxHighlighter language="javascript" style={a11yDark}>
           {`Code Snippet
 <div class="alert alert-success" role="alert">
-<p>A success alert</p>
+  <p>A success alert</p>
 </div>`}
         </SyntaxHighlighter>
       </div>
@@ -52,7 +52,7 @@ export const Alert = () => {
         <SyntaxHighlighter language="javascript" style={a11yDark}>
           {`Code Snippet
 <div class="alert alert-warning" role="alert">
-<p>A simple alert</p>
+  <p>A simple alert</p>
 </div>`}
         </SyntaxHighlighter>
       </div>

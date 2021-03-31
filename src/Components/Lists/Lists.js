@@ -12,7 +12,7 @@ export const Lists = () => {
       <h2 classNameName="heading">All about Lists</h2>
       <div>
         <p className="description">Unstyled Lists</p>
-        <ul className="list">
+        <ul className="list list-unstyled">
           <li className="list-item">Home</li>
           <li className="list-item">About</li>
           <li className="list-item">Contact</li>
