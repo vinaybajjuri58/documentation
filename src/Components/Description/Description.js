@@ -8,6 +8,16 @@ export const Description = () => {
   }, []);
   const [copyCSS, setCopyCss] = useState(false);
   const [copyJS, setCopyJS] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setCopyCss(false);
+    }, 10000);
+  }, [copyCSS]);
+  useEffect(() => {
+    setTimeout(() => {
+      setCopyJS(false);
+    }, 10000);
+  }, [copyJS]);
 
   const [cssCode] = useState(
     '<link rel="stylesheet"  href="https://orangecss.netlify.app/orange.css"/>'

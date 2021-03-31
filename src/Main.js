@@ -174,9 +174,9 @@ export const ComponentContent = () => {
   );
 };
 export const Main = () => {
-  const [togglerState, setTogglerState] = useState(true);
+  const [togglerState, setTogglerState] = useState(false);
   useEffect(() => {
-    setTogglerState(true);
+    setTogglerState(false);
   }, []);
   return (
     <div className="main">
