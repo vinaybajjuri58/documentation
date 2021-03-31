@@ -9,23 +9,25 @@ export const InputComponent = () => {
   }, []);
   return (
     <div className="component-description">
-      <h2 className="component-heading">All about Input</h2>
-      <p className="text text-small">Style for a input box.</p>
-      <input type="text" className="input-styled" placeholder="Enter text" />
-      <SyntaxHighlighter language="javascript" style={a11yDark}>
-        {`Code Snippet
+      <div style={{ width: "100%" }}>
+        <h2 className="component-heading">All about Input</h2>
+        <p className="text text-small">Style for a input box.</p>
+        <input type="text" className="input-styled" placeholder="Enter text" />
+        <SyntaxHighlighter language="javascript" style={a11yDark}>
+          {`Code Snippet
 <input type="text" class="input-styled" placeholder="Enter text" />`}
-      </SyntaxHighlighter>
-      <p className="text text-small">Style for a text-area box.</p>
-      <textarea
-        type="text"
-        className="teaxtarea-styled"
-        placeholder="Enter text"
-      />
-      <SyntaxHighlighter language="javascript" style={a11yDark}>
-        {`Code Snippet
+        </SyntaxHighlighter>
+        <p className="text text-small">Style for a text-area box.</p>
+        <textarea
+          type="text"
+          className="teaxtarea-styled"
+          placeholder="Enter text"
+        />
+        <SyntaxHighlighter language="javascript" style={a11yDark}>
+          {`Code Snippet
 <textarea type="text" class="teaxtarea-styled" placeholder="Enter text" />`}
-      </SyntaxHighlighter>
+        </SyntaxHighlighter>
+      </div>
     </div>
   );
 };

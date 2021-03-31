@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -138,18 +138,16 @@ const SwitchComponents = ({ name }) => {
   }
 };
 
-export const NavigationComponents = ({ displaySidebar, changeDisplay }) => {
+export const NavigationComponents = ({ displaySidebar }) => {
   return (
     <div className={displaySidebar ? "sidebar" : "no-sidebar"}>
-      <h2>Components List</h2>
+      <h2 style={{ paddingLeft: "1rem", fontSize: "large", fontWeight: 600 }}>
+        Components List
+      </h2>
       <ul className="list-sidebar">
         {ComponentsArray.map((component) => (
           <li className="navbar-item" key={component.id}>
-            <Link
-              onClick={() => changeDisplay(!displaySidebar)}
-              className="navbar-link"
-              to={`${component.url}`}
-            >
+            <Link className="navbar-link" to={`${component.url}`}>
               {component.name}
             </Link>
           </li>
@@ -173,20 +171,24 @@ export const ComponentContent = () => {
 };
 export const Main = () => {
   const [togglerState, setTogglerState] = useState(true);
+  useEffect(() => {
+    setTogglerState(true);
+  }, []);
   return (
     <div className="main">
       <button
         onClick={() => setTogglerState(!togglerState)}
         className="side-nav-toggler"
       >
-        <i class="fas fa-bars"></i>
+        {togglerState ? (
+          <i class="fas fa-times"></i>
+        ) : (
+          <i class="fas fa-bars"></i>
+        )}
       </button>
       <Router>
         <NavigationBar />
-        <NavigationComponents
-          displaySidebar={togglerState}
-          changeDisplay={setTogglerState}
-        />
+        <NavigationComponents displaySidebar={togglerState} />
         <ComponentContent />
       </Router>
     </div>

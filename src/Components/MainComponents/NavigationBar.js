@@ -7,7 +7,7 @@ export const NavigationBar = () => {
           className="icon"
           style={{
             textDecoration: "none",
-            paddingLeft: "1.75rem",
+            paddingLeft: "2rem",
             color: "whitesmoke",
           }}
           to="/"

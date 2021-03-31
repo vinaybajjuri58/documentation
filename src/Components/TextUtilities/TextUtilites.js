@@ -10,7 +10,7 @@ export const TextUtilities = () => {
   return (
     <div className="component-description">
       <h2 className="component-heading">All about positioning of Texts</h2>
-      <div style={{ width: "80%" }}>
+      <div style={{ width: "100%" }}>
         <p style={{ textAlign: "left" }} className="text-left">
           Left aligned text on all viewport sizes.
         </p>
@@ -31,8 +31,11 @@ export const TextUtilities = () => {
 <p class="text-left">Left aligned text on all viewport sizes.</p>`}
         </SyntaxHighlighter>
       </div>
-      <div>
-        <h2 className="heading">All about different sizes of Texts</h2>
+      <hr />
+      <div style={{ width: "100%" }}>
+        <h2 className="component-heading">
+          All about different sizes of Texts
+        </h2>
         <p className="text text-xlarge">Text with the extra large size.</p>
         <SyntaxHighlighter language="javascript" style={a11yDark}>
           {`Code Snippet
