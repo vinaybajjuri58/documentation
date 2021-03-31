@@ -138,7 +138,7 @@ const SwitchComponents = ({ name }) => {
   }
 };
 
-export const NavigationComponents = ({ displaySidebar }) => {
+export const NavigationComponents = ({ displaySidebar, toggleSidebar }) => {
   return (
     <div className={displaySidebar ? "sidebar" : "no-sidebar"}>
       <h2 style={{ paddingLeft: "1rem", fontSize: "large", fontWeight: 600 }}>
@@ -147,7 +147,11 @@ export const NavigationComponents = ({ displaySidebar }) => {
       <ul className="list-sidebar">
         {ComponentsArray.map((component) => (
           <li className="navbar-item" key={component.id}>
-            <Link className="navbar-link" to={`${component.url}`}>
+            <Link
+              onClick={() => toggleSidebar(!displaySidebar)}
+              className="navbar-link"
+              to={`${component.url}`}
+            >
               {component.name}
             </Link>
           </li>
@@ -188,7 +192,10 @@ export const Main = () => {
       </button>
       <Router>
         <NavigationBar />
-        <NavigationComponents displaySidebar={togglerState} />
+        <NavigationComponents
+          displaySidebar={togglerState}
+          toggleSidebar={setTogglerState}
+        />
         <ComponentContent />
       </Router>
     </div>

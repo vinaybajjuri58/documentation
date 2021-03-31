@@ -148,6 +148,20 @@
 .icons-container {
   display: none;
 }
+.no-sidebar {
+  overflow: hidden;
+  position: sticky;
+  overflow-y: auto;
+  overflow-x: auto;
+  margin-top: 12vh;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: sidebar;
+  width: 100%;
+}
 
 @media only screen and (max-width: 600px) {
   .side-nav-toggler {
