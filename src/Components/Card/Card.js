@@ -48,7 +48,8 @@ export const Card = () => {
           />
           <h4 className="card-brand">Brand Name</h4>
           <p className="card-desc">A Black T-Shirt</p>
-          <button className="remove-button button button-border">X</button>
+          <badge className="card-badge badge badge-warning">New</badge>
+          <button className="card-remove button button-border">X</button>
         </div>
         <SyntaxHighlighter language="javascript" style={a11yDark}>
           {`Code Snippet
@@ -56,7 +57,8 @@ export const Card = () => {
   <img src="image-url" alt="" class="card-img" />
   <h4 class="card-brand">Brand Name</h4>
   <p class="card-desc">A Black T-Shirt</p>
-  <button class="remove-button button button-border">X</button>
+  <badge class="card-badge badge badge-warning">New</badge>
+  <button class="card-remove button button-border">X</button>
 </div> `}
         </SyntaxHighlighter>
       </div>

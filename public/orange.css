@@ -205,12 +205,17 @@
   margin: 0.5rem;
   padding-left: 1rem;
 }
-.remove-button {
-  display: block;
+.card-remove {
   position: absolute;
   right: 0.25rem;
   top: 0.25rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 50%;
+}
+.card-badge {
+  position: absolute;
+  top: 0.5rem;
+  color: var(--font-color);
 }
 
 /* CSS of avator */
@@ -274,6 +279,9 @@
   height: 2rem;
   padding: var(--space-1);
 }
+.input-styled:focus {
+  border: 2px solid var(--grey-variant);
+}
 .teaxtarea-styled {
   padding: var(--space-1);
   height: 10rem;
@@ -281,6 +289,9 @@
   border: 1px solid black;
   border-radius: 0.125rem;
   font-size: 1rem;
+}
+.teaxtarea-styled:focus {
+  border: 2px solid var(--grey-variant);
 }
 
 /* CSS of modal */
