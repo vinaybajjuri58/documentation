@@ -9,7 +9,7 @@ export const Lists = () => {
   }, []);
   return (
     <div className="component-description">
-      <h2 classNameName="heading">All about Lists</h2>
+      <h2 classNameName="component-heading">All about Lists</h2>
       <div>
         <p className="description">Unstyled Lists</p>
         <ul className="list list-unstyled">

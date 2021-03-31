@@ -17,7 +17,7 @@ export const Description = () => {
   );
   return (
     <div className="component-description">
-      <h2>Description</h2>
+      <h2 className="component-heading">Description</h2>
       <p>Copy and paste below link in head of index.html for using css</p>
       <div>
         <SyntaxHighlighter language="javascript" style={a11yDark}>

@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
-import "./Image.css";
+// import "./Image.css";
 export const ImageComponent = () => {
   useEffect(() => {
     document.title = "Image Component";
   }, []);
   return (
     <div className="component-description">
-      <h2 className="heading">All about Images</h2>
+      <h2 className="component-heading">All about Images</h2>
       <div className="images">
         <div className="image-component">
           <p className="description">Image with default size</p>

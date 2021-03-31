@@ -8,7 +8,7 @@ export const Card = () => {
   }, []);
   return (
     <div className="component-description">
-      <h2 className="heading">All about Cards</h2>
+      <h2 className="component-heading">All about Cards</h2>
       <div>
         <div className="card">
           <img

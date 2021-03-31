@@ -8,7 +8,7 @@ export const Badge = () => {
   }, []);
   return (
     <div className="component-description">
-      <h2 className="heading">All about Badges</h2>
+      <h2 className="component-heading">All about Badges</h2>
       <p className="description">A simple badge</p>
       <span className="badge">badge</span>
       <SyntaxHighlighter language="javascript" style={a11yDark}>

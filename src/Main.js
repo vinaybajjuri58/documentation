@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -138,14 +138,18 @@ const SwitchComponents = ({ name }) => {
   }
 };
 
-export const NavigationComponents = () => {
+export const NavigationComponents = ({ displaySidebar, changeDisplay }) => {
   return (
-    <div className="sidebar">
+    <div className={displaySidebar ? "sidebar" : "no-sidebar"}>
       <h2>Components List</h2>
       <ul className="list-sidebar">
         {ComponentsArray.map((component) => (
           <li className="navbar-item" key={component.id}>
-            <Link className="navbar-link" to={`${component.url}`}>
+            <Link
+              onClick={() => changeDisplay(!displaySidebar)}
+              className="navbar-link"
+              to={`${component.url}`}
+            >
               {component.name}
             </Link>
           </li>
@@ -168,11 +172,21 @@ export const ComponentContent = () => {
   );
 };
 export const Main = () => {
+  const [togglerState, setTogglerState] = useState(true);
   return (
     <div className="main">
+      <button
+        onClick={() => setTogglerState(!togglerState)}
+        className="side-nav-toggler"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
       <Router>
         <NavigationBar />
-        <NavigationComponents />
+        <NavigationComponents
+          displaySidebar={togglerState}
+          changeDisplay={setTogglerState}
+        />
         <ComponentContent />
       </Router>
     </div>

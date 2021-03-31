@@ -3,14 +3,11 @@ export const NavigationBar = () => {
   return (
     <nav className="nav">
       <h2>
-        <span style={{ marginRight: "0.5rem" }} className="nav-toggler">
-          <i class="fas fa-bars"></i>
-        </span>
         <NavLink
           className="icon"
           style={{
             textDecoration: "none",
-            paddingLeft: "1.5rem",
+            paddingLeft: "1.75rem",
             color: "whitesmoke",
           }}
           to="/"
@@ -21,7 +18,6 @@ export const NavigationBar = () => {
       <ul className="main-navbar-items">
         <li className="top-navbar-item">
           <a
-            style={{ textDecoration: "none", color: "whitesmoke" }}
             target="_blank"
             rel="noreferrer"
             href="https://github.com/vinaybajjuri58"

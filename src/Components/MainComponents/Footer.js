@@ -1,11 +1,6 @@
 export const Footer = () => {
   return (
-    <footer
-      style={{
-        display: "flex",
-        justifyContent: "space-evenly",
-      }}
-    >
+    <footer className="footer">
       <p>Made wih ❤ by Vinay Bajjuri</p>
     </footer>
   );

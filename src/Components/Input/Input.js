@@ -9,7 +9,7 @@ export const InputComponent = () => {
   }, []);
   return (
     <div className="component-description">
-      <h2 className="heading">All about Input</h2>
+      <h2 className="component-heading">All about Input</h2>
       <p className="text text-small">Style for a input box.</p>
       <input type="text" className="input-styled" placeholder="Enter text" />
       <SyntaxHighlighter language="javascript" style={a11yDark}>

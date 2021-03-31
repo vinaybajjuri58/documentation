@@ -8,7 +8,7 @@ export const Modal = () => {
   }, []);
   return (
     <div className="component-description">
-      <h2 className="heading">All about Modals</h2>
+      <h2 className="component-heading">All about Modals</h2>
       <button
         onClick={() => setDisplayState("block")}
         className="button"
@@ -30,26 +30,28 @@ export const Modal = () => {
             <button
               id="close-modal"
               onClick={() => setDisplayState("none")}
-              className="button button-warning"
+              className="button button-warning modal-toggle"
             >
               X
             </button>
           </span>
         </div>
       </div>
-      <SyntaxHighlighter language="javascript" style={a11yDark}>
-        {`Code Snippet  HTML:
-        <button class="button" id="open-modal">Open Modal</button>
+      <div>
+        <SyntaxHighlighter language="javascript" style={a11yDark}>
+          {`Code Snippet  HTML:
+<button class="button" id="open-modal">Open Modal</button>
 
-        <div id="modal" class="modal">
-          <div class="modal-content">
-            <p>Some text in the Modal..</p>
-            <span class="close-modal">
-              <button id="close-modal" class="button button-warning">X</button>
-            </span>
-          </div>
-        </div> `}
-      </SyntaxHighlighter>
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <p>Some text in the Modal..</p>
+    <span class="close-modal">
+      <button id="close-modal" class="button button-warning modal-toggle">X</button>
+    </span>
+  </div>
+</div> `}
+        </SyntaxHighlighter>
+      </div>
     </div>
   );
 };

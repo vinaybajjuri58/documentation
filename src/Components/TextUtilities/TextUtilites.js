@@ -9,7 +9,7 @@ export const TextUtilities = () => {
   }, []);
   return (
     <div className="component-description">
-      <h2 className="heading">All about positioning of Texts</h2>
+      <h2 className="component-heading">All about positioning of Texts</h2>
       <div style={{ width: "80%" }}>
         <p style={{ textAlign: "left" }} className="text-left">
           Left aligned text on all viewport sizes.

@@ -169,6 +169,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   box-shadow: 0 2px 2px 2px #ccc;
+  position: relative;
 }
 .card-img {
   width: 100%;
@@ -311,11 +312,17 @@
 }
 
 .modal-content {
+  position: relative;
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+}
+.modal-toggle {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
 }
 
 /* CSS of text utilities */
@@ -350,7 +357,7 @@
 
 .toast {
   position: fixed;
-  padding: 1rem;
+  padding: 0.5rem;
   bottom: 15vh;
   right: 0.25rem;
   display: flex;
@@ -361,12 +368,17 @@
   width: 300px;
   height: 10%;
   background-color: var(--grey-variant);
-  border-radius: 0.5rem;
+  border-radius: 0.15rem;
 }
 .toast-container {
   display: flex;
-  justify-content: space-between;
+  position: relative;
   align-items: center;
+}
+.toast-toggle {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
 }
 
 /* CSS of responsive navbar */

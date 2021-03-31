@@ -33,7 +33,7 @@ export const Button = () => {
         </SyntaxHighlighter>
       </div>
       <hr />
-      <h3 className="heading">Outline Buttons</h3>
+      <h3 className="component-heading">Outline Buttons</h3>
       <p className="description">A simple Button with border effect</p>
       <button className="button button-border">Button</button>
       <div>

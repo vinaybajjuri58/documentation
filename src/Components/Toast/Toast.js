@@ -8,7 +8,7 @@ export const Toast = () => {
   }, []);
   return (
     <div className="component-description">
-      <h2 className="">All about Toast</h2>
+      <h2 className="component-heading">All about Toast</h2>
       <button className="button" onClick={() => setDisplayToast("block")}>
         Toast
       </button>
@@ -22,7 +22,7 @@ export const Toast = () => {
           <p>Toast Message</p>
           <button
             onClick={() => setDisplayToast("none")}
-            className="button button-warning"
+            className="button button-warning toast-toggle"
           >
             X
           </button>
@@ -31,15 +31,15 @@ export const Toast = () => {
       <SyntaxHighlighter language="javascript" style={a11yDark}>
         {`Code Snippet
 <div class="toast">
-<div class="toast-container" >
-  <p>Toast Message</p>
-  <button
-    onClick={() => setDisplayToast("none")}
-    className="button button-warning"
-  >
-    X
-  </button>
-</div>
+  <div class="toast-container" >
+    <p>Toast Message</p>
+    <button
+      onClick={() => setDisplayToast("none")}
+      className="button button-warning toast-toggle"
+    >
+      X
+    </button>
+  </div>
 </div>`}
       </SyntaxHighlighter>
     </div>
