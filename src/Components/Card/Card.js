@@ -12,7 +12,7 @@ export const Card = () => {
       <div>
         <div className="card">
           <img
-            src="https://media.tarkett-image.com/large/TH_25121916_25131916_25126916_25136916_001.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-K6eEjSupJW5RaX7jUf_YPNkj5sHQ6JUTA&usqp=CAU"
             alt=""
             className="card-img"
           />
@@ -46,7 +46,7 @@ export const Card = () => {
         <p className="description">A Card for e-commerce</p>
         <div className="card card-shopping">
           <img
-            src="https://media.tarkett-image.com/large/TH_25121916_25131916_25126916_25136916_001.jpg"
+            src="https://images.unsplash.com/photo-1571455786673-9d9d6c194f90?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8YmxhY2slMjB0JTIwc2hpcnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
             alt=""
             className="card-img"
           />
@@ -58,7 +58,7 @@ export const Card = () => {
           {`Code Snippet
 <div class="card card-shopping">
 <img
-  src="https://media.tarkett-image.com/large/TH_25121916_25131916_25126916_25136916_001.jpg"
+  src="image-url"
   alt=""
   class="card-img"
 />

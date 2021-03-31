@@ -7,7 +7,7 @@ import {
   useParams,
 } from "react-router-dom";
 import { Alert } from "./Components/Alert";
-import { Avator } from "./Components/Avatar";
+import { Avatar } from "./Components/Avatar";
 import { Badge } from "./Components/Badge";
 import { Button } from "./Components/Button";
 import { Card } from "./Components/Card";
@@ -32,8 +32,8 @@ const ComponentsArray = [
   },
   {
     id: 1,
-    name: "Avator",
-    url: "/avator",
+    name: "Avatar",
+    url: "/avatar",
   },
   {
     id: 2,
@@ -103,8 +103,8 @@ const SwitchComponents = ({ name }) => {
     //   return <Description />;
     case "alert":
       return <Alert />;
-    case "avator":
-      return <Avator />;
+    case "avatar":
+      return <Avatar />;
     case "badge":
       return <Badge />;
     case "button":

@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
-// import "./Button.css";
 export const Button = () => {
   useEffect(() => {
     document.title = "Button Component";
@@ -33,7 +32,8 @@ export const Button = () => {
 <button class="button button-warning">Warning</button>`}
         </SyntaxHighlighter>
       </div>
-      <h3 className="heading">Border effect Buttons</h3>
+      <hr />
+      <h3 className="heading">Outline Buttons</h3>
       <p className="description">A simple Button with border effect</p>
       <button className="button button-border">Button</button>
       <div>

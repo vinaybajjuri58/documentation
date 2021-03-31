@@ -23,11 +23,9 @@
   background-color: white;
   display: grid;
   grid-template-columns: 15% 85%;
-  grid-template-areas:
-    "navbar navbar"
-    "sidebar description";
+  grid-template-areas: "sidebar description";
   margin: none;
-  border: 1px solid black;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .nav {
   position: fixed;
@@ -35,7 +33,6 @@
   border-bottom: 1px solid black;
   display: flex;
   width: 100%;
-  grid-area: navbar;
   justify-content: space-between;
   height: 12vh;
   background-color: var(--primary-color);
@@ -52,9 +49,7 @@
   padding: 1rem;
   color: whitesmoke;
 }
-.top-navbar-item:hover {
-  border-bottom: 2px solid whitesmoke;
-}
+
 .main-heading {
   background-color: beige;
   width: 100%;
@@ -68,30 +63,31 @@
   overflow-x: auto;
   margin-top: 12vh;
   height: 85vh;
-  justify-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   grid-area: sidebar;
 }
 
 .list-sidebar {
   list-style: none;
-  top: 6rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
-.list-sidebar > li {
-  padding: 1rem;
-}
+
 .navbar-link {
   text-decoration: none;
   font-size: var(--font-size);
   color: var(--primary-color);
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.5rem;
+}
+.navbar-item {
+  width: 100%;
+  padding: 1rem;
 }
 .navbar-link:hover {
   color: var(--font-color);
-  border: 1px solid var(--primary-color);
   background-color: var(--primary-color);
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.5rem;
 }
 
 .component-description {
@@ -114,6 +110,10 @@ footer {
 .footer-icon {
   padding-left: 1rem;
   font-size: 1rem;
+}
+.icon {
+  color: white;
+  font-size: x-large;
 }
 
 @media only screen and (max-width: 600px) {

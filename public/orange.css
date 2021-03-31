@@ -75,12 +75,8 @@
   background-color: var(--primary-color);
   color: var(--font-color);
   font-size: var(--font-size);
-  margin: 0.5rem;
 }
 .alert p {
-  padding-left: 1rem;
-}
-.alert-text {
   padding-left: 1rem;
 }
 .alert-primary {
@@ -130,6 +126,9 @@
 .button-warning {
   background-color: var(--warning);
 }
+.button:hover {
+  cursor: pointer;
+}
 
 .button-border {
   background-color: white;
@@ -142,6 +141,7 @@
 .button-border:hover {
   color: var(--font-color);
   background-color: var(--grey-variant);
+  cursor: pointer;
 }
 .border-primary {
   color: var(--primary-color);
@@ -215,13 +215,13 @@
 
 /* CSS of avator */
 
-.avator {
+.avatar {
   vertical-align: middle;
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
-.avator-sm {
+.avatar-sm {
   vertical-align: middle;
   width: 50px;
   height: 50px;
