@@ -21,6 +21,7 @@ import { TextUtilities } from "./Components/TextUtilities";
 import { Toast } from "./Components/Toast";
 import { NavigationBar } from "./Components/MainComponents";
 import { Description } from "./Components/Description";
+import { Rating } from "./Components/Rating";
 
 import "./main.css";
 
@@ -90,6 +91,11 @@ const ComponentsArray = [
     name: "Toast",
     url: "/toast",
   },
+  {
+    id: 13,
+    name: "Rating",
+    url: "/rating",
+  },
   // {
   //   id: 13,
   //   name: "Description",
@@ -127,6 +133,8 @@ const SwitchComponents = ({ name }) => {
       return <TextUtilities />;
     case "toast":
       return <Toast />;
+    case "rating":
+      return <Rating />;
     // case "description":
     //   return <Description />;
     default:
