@@ -10,17 +10,6 @@ export const Alert = () => {
       <div style={{ width: "100%" }}>
         <h2 className="component-heading">All about Alerts</h2>
         <p className="alert-description">A simple alert</p>
-        <div className="alert" role="alert">
-          <p>A simple alert</p>
-        </div>
-        <div>
-          <SyntaxHighlighter language="javascript" style={a11yDark}>
-            {`Code Snippet
-<div class="alert" role="alert">
-  <p>A simple alert</p>
-</div>`}
-          </SyntaxHighlighter>
-        </div>
         <p className="alert-description">Alert with primary color</p>
         <div className="alert alert-primary" role="alert">
           <p>A primary alert</p>

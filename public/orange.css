@@ -80,7 +80,7 @@
   padding-left: 1rem;
 }
 .alert-primary {
-  background-color: var(--primary);
+  background-color: var(--primary-color);
 }
 .alert-success {
   background-color: var(--success);
