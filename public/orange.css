@@ -205,6 +205,7 @@
   font-size: 0.9rem;
   margin: 0.5rem;
   padding-left: 1rem;
+  flex-grow: 1;
 }
 .card-remove {
   position: absolute;
@@ -217,6 +218,19 @@
   position: absolute;
   top: 0.5rem;
   color: var(--font-color);
+}
+.card-horizontal {
+  width: 360px;
+  height: 100%;
+  display: flex;
+  box-shadow: 0 2px 2px 2px #ccc;
+  position: relative;
+}
+.card-horizontal > .card-img {
+  width: 50%;
+}
+.card-content {
+  width: 50%;
 }
 
 /* CSS of avator */
