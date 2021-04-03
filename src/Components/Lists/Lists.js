@@ -59,6 +59,22 @@ export const Lists = () => {
 </ul>`}
           </SyntaxHighlighter>
         </div>
+        <div>
+          <p className="description">Stacked Lists</p>
+          <ul className="list list-unstyled list-stacked">
+            <li className="list-item">Home</li>
+            <li className="list-item">About</li>
+            <li className="list-item">Contact</li>
+          </ul>
+          <SyntaxHighlighter language="javascript" style={a11yDark}>
+            {`Code Snippet
+<ul className="list list-unstyled list-stacked">
+  <li className="list-item">Home</li>
+  <li className="list-item">About</li>
+  <li className="list-item">Contact</li>
+</ul>`}
+          </SyntaxHighlighter>
+        </div>
       </div>
     </div>
   );

@@ -67,18 +67,19 @@ export const Card = () => {
       </div>
       <p className="description">A Horizontal card</p>
       <div className="card-horizontal">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-K6eEjSupJW5RaX7jUf_YPNkj5sHQ6JUTA&usqp=CAU"
-          alt=""
-          className="card-img"
-        />
+        <div className="card-content-img">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-K6eEjSupJW5RaX7jUf_YPNkj5sHQ6JUTA&usqp=CAU"
+            alt=""
+            className="card-img"
+          />
+        </div>
         <div className="card-content">
           <h4 className="card-title">Card Title</h4>
           <p className="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et
-            architecto dicta. Placeat, aspernatur, commodi impedit dicta id,
-            explicabo porro cumque ullam dolore saepe fuga? Ullam porro
-            voluptatum suscipit dolor!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatum
+            suscipit dolor! dolore saepe fuga? Ullam porro voluptatum suscipit
+            dolor!
           </p>
         </div>
       </div>
@@ -86,18 +87,15 @@ export const Card = () => {
         <SyntaxHighlighter language="javascript" style={a11yDark}>
           {`Code Snippet
 <div className="card-horizontal">
-  <img
-  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-K6eEjSupJW5RaX7jUf_YPNkj5sHQ6JUTA&usqp=CAU"
-  alt=""
-  className="card-img"
-  />
+  <div className="card-content-img">
+    <img src="image-url" alt="" className="card-img" />
+  </div>
   <div className="card-content">
     <h4 className="card-title">Card Title</h4>
     <p className="card-text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et
-      architecto dicta. Placeat, aspernatur, commodi impedit dicta id,
-      explicabo porro cumque ullam dolore saepe fuga? Ullam porro
-      voluptatum suscipit dolor!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatum
+      suscipit dolor! dolore saepe fuga? Ullam porro voluptatum suscipit
+      dolor!
     </p>
   </div>
 </div>`}
