@@ -1,27 +1,7 @@
 import React, { useEffect, useState } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  NavLink,
-  Routes,
-} from "react-router-dom";
-import { Alert } from "./Components/Alert";
-import { Avatar } from "./Components/Avatar";
-import { Badge } from "./Components/Badge";
-import { Button } from "./Components/Button";
-import { Card } from "./Components/Card";
-import { ImageComponent } from "./Components/Image";
-import { InputComponent } from "./Components/Input";
-import { Lists } from "./Components/Lists";
-import { Modal } from "./Components/Modal";
-import { Navigation } from "./Components/Navigation";
-// import { Slider } from "./Components/Slider";
-import { TextUtilities } from "./Components/TextUtilities";
-import { Toast } from "./Components/Toast";
+import { RoutesComponent } from "./Routes";
 import { NavigationBar } from "./Components/MainComponents";
-import { Description } from "./Components/Description";
-import { Rating } from "./Components/Rating";
-import { NoComponent } from "./Components/404";
+import { BrowserRouter as Router, NavLink } from "react-router-dom";
 
 import "./main.css";
 
@@ -130,28 +110,6 @@ export const NavigationComponents = ({ displaySidebar, toggleSidebar }) => {
   );
 };
 
-export const ComponentContent = () => {
-  return (
-    <Routes>
-      <Route path="/alert" element={<Alert />} />
-      <Route path="/avatar" element={<Avatar />} />
-      <Route path="/badge" element={<Badge />} />
-      <Route path="/button" element={<Button />} />
-      <Route path="/card" element={<Card />} />
-      <Route path="/image" element={<ImageComponent />} />
-      <Route path="/input" element={<InputComponent />} />
-      <Route path="/lists" element={<Lists />} />
-      <Route path="/modal" element={<Modal />} />
-      <Route path="/navigation" element={<Navigation />} />
-      <Route path="/text-utilities" element={<TextUtilities />} />
-      <Route path="/toast" element={<Toast />} />
-      <Route path="/rating" element={<Rating />} />
-      <Route path="/" element={<Description />} />
-      <Route path="*" element={<NoComponent />} />
-    </Routes>
-  );
-};
-
 export const Main = () => {
   const [togglerState, setTogglerState] = useState(false);
   useEffect(() => {
@@ -175,7 +133,7 @@ export const Main = () => {
           displaySidebar={togglerState}
           toggleSidebar={setTogglerState}
         />
-        <ComponentContent />
+        <RoutesComponent />
       </Router>
     </div>
   );
