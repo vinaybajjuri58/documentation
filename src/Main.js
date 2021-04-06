@@ -1,27 +1,7 @@
 import React, { useEffect, useState } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams,
-} from "react-router-dom";
-import { Alert } from "./Components/Alert";
-import { Avatar } from "./Components/Avatar";
-import { Badge } from "./Components/Badge";
-import { Button } from "./Components/Button";
-import { Card } from "./Components/Card";
-import { ImageComponent } from "./Components/Image";
-import { InputComponent } from "./Components/Input";
-import { Lists } from "./Components/Lists";
-import { Modal } from "./Components/Modal";
-import { Navigation } from "./Components/Navigation";
-// import { Slider } from "./Components/Slider";
-import { TextUtilities } from "./Components/TextUtilities";
-import { Toast } from "./Components/Toast";
+import { RoutesComponent } from "./Routes";
 import { NavigationBar } from "./Components/MainComponents";
-import { Description } from "./Components/Description";
-import { Rating } from "./Components/Rating";
+import { BrowserRouter as Router, NavLink } from "react-router-dom";
 
 import "./main.css";
 
@@ -103,49 +83,6 @@ const ComponentsArray = [
   // },
 ];
 
-const SwitchComponents = ({ name }) => {
-  switch (name) {
-    // case "description":
-    //   return <Description />;
-    case "alert":
-      return <Alert />;
-    case "avatar":
-      return <Avatar />;
-    case "badge":
-      return <Badge />;
-    case "button":
-      return <Button />;
-    case "card":
-      return <Card />;
-    case "image":
-      return <ImageComponent />;
-    case "input":
-      return <InputComponent />;
-    case "lists":
-      return <Lists />;
-    case "modal":
-      return <Modal />;
-    case "navigation":
-      return <Navigation />;
-    // case "slider":
-    //   return <Slider />;
-    case "text-utilities":
-      return <TextUtilities />;
-    case "toast":
-      return <Toast />;
-    case "rating":
-      return <Rating />;
-    // case "description":
-    //   return <Description />;
-    default:
-      return (
-        <div className="component-description">
-          <h2 className="heading">Component Not found</h2>
-        </div>
-      );
-  }
-};
-
 export const NavigationComponents = ({ displaySidebar, toggleSidebar }) => {
   return (
     <div className={displaySidebar ? "sidebar" : "no-sidebar"}>
@@ -155,32 +92,24 @@ export const NavigationComponents = ({ displaySidebar, toggleSidebar }) => {
       <ul className="list-sidebar">
         {ComponentsArray.map((component) => (
           <li className="navbar-item" key={component.id}>
-            <Link
+            <NavLink
               onClick={() => toggleSidebar(!displaySidebar)}
               className="navbar-link"
               to={`${component.url}`}
+              activeStyle={{
+                color: "white",
+                backgroundColor: "#9575cd",
+              }}
             >
               {component.name}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>
     </div>
   );
 };
-function Child() {
-  let { id } = useParams();
 
-  return <SwitchComponents name={id} componentClass="component-description" />;
-}
-export const ComponentContent = () => {
-  return (
-    <Switch>
-      <Route path="/" exact component={Description} />
-      <Route path="/:id" children={<Child />} />
-    </Switch>
-  );
-};
 export const Main = () => {
   const [togglerState, setTogglerState] = useState(false);
   useEffect(() => {
@@ -204,8 +133,65 @@ export const Main = () => {
           displaySidebar={togglerState}
           toggleSidebar={setTogglerState}
         />
-        <ComponentContent />
+        <RoutesComponent />
       </Router>
     </div>
   );
 };
+
+// function Child() {
+//   let { id } = useParams();
+
+//   return <SwitchComponents name={id} componentClass="component-description" />;
+// }
+// export const ComponentContent = () => {
+//   return (
+//     <Switch>
+//       <Route path="/" exact component={Description} />
+//       <Route path="/:id" children={<Child />} />
+//     </Switch>
+//   );
+// };
+
+// const SwitchComponents = ({ name }) => {
+//   switch (name) {
+//     // case "description":
+//     //   return <Description />;
+//     case "alert":
+//       return <Alert />;
+//     case "avatar":
+//       return <Avatar />;
+//     case "badge":
+//       return <Badge />;
+//     case "button":
+//       return <Button />;
+//     case "card":
+//       return <Card />;
+//     case "image":
+//       return <ImageComponent />;
+//     case "input":
+//       return <InputComponent />;
+//     case "lists":
+//       return <Lists />;
+//     case "modal":
+//       return <Modal />;
+//     case "navigation":
+//       return <Navigation />;
+//     // case "slider":
+//     //   return <Slider />;
+//     case "text-utilities":
+//       return <TextUtilities />;
+//     case "toast":
+//       return <Toast />;
+//     case "rating":
+//       return <Rating />;
+//     // case "description":
+//     //   return <Description />;
+//     default:
+//       return (
+//         <div className="component-description">
+//           <h2 className="heading">Component Not found</h2>
+//         </div>
+//       );
+//   }
+// };

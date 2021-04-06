@@ -1,0 +1,1 @@
+export { NoComponent } from "./NoComponent";
