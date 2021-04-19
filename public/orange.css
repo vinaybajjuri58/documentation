@@ -159,6 +159,12 @@
   color: var(--font-color);
   background-color: var(--warning);
 }
+.icon-button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size);
+}
 
 /* CSS of cards */
 

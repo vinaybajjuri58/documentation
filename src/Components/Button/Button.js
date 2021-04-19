@@ -59,6 +59,28 @@ export const Button = () => {
 <button className="button button-border border-warning">Warning</button>`}
           </SyntaxHighlighter>
         </div>
+        <hr />
+        <h3 className="component-heading">Icon Buttons</h3>
+        <p className="description">An Like Icon as a button</p>
+        <button className="icon-button">
+          <i className="fas fa-trash"></i>
+        </button>
+        <div>
+          <SyntaxHighlighter language="javascript" style={a11yDark}>
+            {`Code Snippet
+<button className="icon-button"><i className="fas fa-trash"></i></button>`}
+          </SyntaxHighlighter>
+        </div>
+        <p className="description">An Bin Icon as a button</p>
+        <button className="icon-button">
+          <i class="fas fa-thumbs-up"></i>
+        </button>
+        <div>
+          <SyntaxHighlighter language="javascript" style={a11yDark}>
+            {`Code Snippet
+<button className="icon-button"><i class="fas fa-thumbs-up"></i></button>`}
+          </SyntaxHighlighter>
+        </div>
       </div>
     </div>
   );
