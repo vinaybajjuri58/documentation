@@ -15,6 +15,7 @@
   --font-color: #fffff3;
   font-family: "Open Sans", sans-serif;
   --background-color: #9575cd;
+  --dark-color: #121212;
 }
 /* CSS of navigation bar */
 
@@ -416,6 +417,23 @@
   position: absolute;
   top: 0.1rem;
   right: 0.1rem;
+}
+
+/* Snackbar styling */
+.snackbar {
+  position: fixed;
+  background-color: var(--dark-color);
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 2.5rem;
+  color: var(--font-color);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* CSS of responsive navbar */

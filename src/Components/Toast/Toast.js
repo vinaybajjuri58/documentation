@@ -34,16 +34,40 @@ export const Toast = () => {
 <div class="toast">
   <div class="toast-container" >
     <p>Toast Message</p>
-    <button
-      onClick={() => setDisplayToast("none")}
-      className="button button-warning toast-toggle"
-    >
-      X
-    </button>
+    <button className="button button-warning toast-toggle" > X </button>
   </div>
 </div>`}
         </SyntaxHighlighter>
+        <SnackBar />
       </div>
+    </div>
+  );
+};
+
+const SnackBar = () => {
+  const [displaySnackbar, setDisplaySnackBar] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setDisplaySnackBar(false);
+    }, 2500);
+  }, [displaySnackbar]);
+  return (
+    <div>
+      <h2 className="component-heading">All about Snackbar</h2>
+      <button className="button" onClick={() => setDisplaySnackBar(true)}>
+        SnackBar
+      </button>
+      {displaySnackbar && (
+        <div className="snackbar">
+          <p>A dummy SnackBar</p>
+        </div>
+      )}
+      <SyntaxHighlighter language="javascript" style={a11yDark}>
+        {`Code Snippet
+<div className="snackbar">
+  <p>A dummy SnackBar</p>
+</div>`}
+      </SyntaxHighlighter>
     </div>
   );
 };
