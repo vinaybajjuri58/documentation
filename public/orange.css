@@ -6,7 +6,7 @@
   --space-2: 1rem;
   --space-3: 1.5rem;
   --space-4: 2rem;
-  --font-size: 1.1rem;
+  --font-size: 1rem;
   --primary-color: #9575cd;
   --grey-variant: #8e7f7f;
   --primary: #0984e3;
@@ -147,6 +147,7 @@
 .border-primary {
   color: var(--primary-color);
   border: 1.5px solid var(--primary-color);
+  background-color: var(--font-color);
 }
 .border-primary:hover {
   color: var(--font-color);
@@ -155,6 +156,7 @@
 .border-warning {
   color: var(--warning);
   border: 1.5px solid var(--warning);
+  background-color: var(--font-color);
 }
 .border-warning:hover {
   color: var(--font-color);
@@ -176,9 +178,12 @@
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
+  height: 450px;
+  border: 1px solid var(--grey-variant);
 }
 .card-img {
   width: 100%;
+  height: 300px;
 }
 .card-title {
   padding-left: 1rem;
@@ -202,6 +207,11 @@
   box-shadow: 0 2px 2px 2px #ccc;
 }
 
+.card-text-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 .card-brand {
   padding-left: 1rem;
   padding-top: 0.5rem;
@@ -213,6 +223,11 @@
   padding-left: 1rem;
   flex-grow: 1;
 }
+.card-action {
+  align-self: center;
+  margin-bottom: var(--space-0);
+}
+
 .card-remove {
   position: absolute;
   right: 0.25rem;
