@@ -1,0 +1,51 @@
+:root {
+  --star-color: #ffe268;
+}
+.rating {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.star-icon {
+  color: black;
+}
+
+.star-active > i {
+  color: var(--star-color);
+}
+
+.heart-active > i {
+  color: var(--focus-color-primary);
+}
+
+.read-only {
+  pointer-events: none;
+}
+
+.disabled {
+  background: none;
+  opacity: 0.7;
+}
+
+.feedback {
+  padding: 0 0.8rem;
+}
+
+.inline-list {
+  list-style-type: none;
+  display: flex;
+}
+
+@media screen and (max-width: 648px) {
+  .rating-examples {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  .rating {
+    align-items: center;
+  }
+}
