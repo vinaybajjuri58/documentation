@@ -71,11 +71,11 @@ const ComponentsArray = [
     name: "Toast",
     url: "/toast",
   },
-  {
-    id: 13,
-    name: "Rating",
-    url: "/rating",
-  },
+  // {
+  //   id: 13,
+  //   name: "Rating",
+  //   url: "/rating",
+  // },
   // {
   //   id: 13,
   //   name: "Description",
@@ -138,60 +138,3 @@ export const Main = () => {
     </div>
   );
 };
-
-// function Child() {
-//   let { id } = useParams();
-
-//   return <SwitchComponents name={id} componentClass="component-description" />;
-// }
-// export const ComponentContent = () => {
-//   return (
-//     <Switch>
-//       <Route path="/" exact component={Description} />
-//       <Route path="/:id" children={<Child />} />
-//     </Switch>
-//   );
-// };
-
-// const SwitchComponents = ({ name }) => {
-//   switch (name) {
-//     // case "description":
-//     //   return <Description />;
-//     case "alert":
-//       return <Alert />;
-//     case "avatar":
-//       return <Avatar />;
-//     case "badge":
-//       return <Badge />;
-//     case "button":
-//       return <Button />;
-//     case "card":
-//       return <Card />;
-//     case "image":
-//       return <ImageComponent />;
-//     case "input":
-//       return <InputComponent />;
-//     case "lists":
-//       return <Lists />;
-//     case "modal":
-//       return <Modal />;
-//     case "navigation":
-//       return <Navigation />;
-//     // case "slider":
-//     //   return <Slider />;
-//     case "text-utilities":
-//       return <TextUtilities />;
-//     case "toast":
-//       return <Toast />;
-//     case "rating":
-//       return <Rating />;
-//     // case "description":
-//     //   return <Description />;
-//     default:
-//       return (
-//         <div className="component-description">
-//           <h2 className="heading">Component Not found</h2>
-//         </div>
-//       );
-//   }
-// };

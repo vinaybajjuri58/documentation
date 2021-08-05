@@ -13,7 +13,7 @@ import { Navigation } from "./Components/Navigation";
 import { TextUtilities } from "./Components/TextUtilities";
 import { Toast } from "./Components/Toast";
 import { Description } from "./Components/Description";
-import { Rating } from "./Components/Rating";
+// import { Rating } from "./Components/Rating";
 import { NoComponent } from "./Components/404";
 
 export const RoutesComponent = () => {
@@ -31,7 +31,7 @@ export const RoutesComponent = () => {
       <Route path="/navigation" element={<Navigation />} />
       <Route path="/text-utilities" element={<TextUtilities />} />
       <Route path="/toast" element={<Toast />} />
-      <Route path="/rating" element={<Rating />} />
+      {/* <Route path="/rating" element={<Rating />} /> */}
       <Route path="/" element={<Description />} />
       <Route path="*" element={<NoComponent />} />
     </Routes>
